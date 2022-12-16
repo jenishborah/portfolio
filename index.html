@@ -16,17 +16,20 @@
  
     </head>
     <body>
-        <div id="preloader">
-            <div class="e-loadholder">
-                <div class="m-loader">
-                  <span class="e-text">Hold on</span>
-                </div>
-              </div>
-              <div id="particleCanvas-Blue"></div>
-              <div id="particleCanvas-White"></div>
-              <script src="js/load.js"></script>
-        </div>
-      
+     
+            <div id="preloader">
+                <div class="e-loadholder">
+                    <div class="m-loader">
+                      <span class="e-text">Hold on</span>
+                    </div>
+                  </div>
+                  <div id="particleCanvas-Blue"></div>
+                  <div id="particleCanvas-White"></div>
+                  <script src="js/load.js"></script>
+            </div>
+          
+        
+       
 <div class="main-content">
     <div class="aside">
         <div class= "logo">
@@ -624,11 +627,12 @@
     </div>
 </div>
 <div class="style-switcher">
-    <div class="style-switcher-toggler s-icon">
+   <!--<div class="style-switcher-toggler s-icon">
         <i class="fas fa-cog fa-spin"></i>
     </div>
+--> 
     <div class="day-night s-icon">
-        <i class="fas "></i>
+        <i class="fas fa-moon "></i>
     </div>
     <h4>Theme Colors</h4>
     <div class="color">
@@ -646,10 +650,19 @@
         <script src="js/style-switcher.js"></script>
         <script>
 
-            var loader = document.getElementById("preloader");
-            window.addEventListener("load", function(){
-                loader.style.display = "none";
-            })
-        </script>
+             //  $(document).ready(function(){
+             //     window.setTimeout('faedeout():', 5000);
+            //  });
+              // function faedeout(){
+                //  $('#preloader').delay(4000).fadeOut('slow', function(){
+               //       $('.notLoaded').removeClass('notLoaded');
+              //    });
+             //}
+              var loader = document.getElementById("preloader");
+              window.addEventListener("load", function(){
+                 loader.style.display = "none";
+              })
+          </script>
+      
     </body>
 </html> 
