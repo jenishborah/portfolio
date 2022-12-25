@@ -640,10 +640,14 @@ h3.hello span {
   border-radius: 10px;
   overflow: hidden;
   cursor: pointer;
+  transition: transform .6s ease;
 }
 
 .portfolio .portfolio-item-inner .portfolio-img img {
   width: 100%;
+}
+.portfolio .portfolio-item-inner:hover{
+  transform: scale(1.2);
 }
 
 .row2 {
